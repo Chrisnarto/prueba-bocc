@@ -6,14 +6,14 @@
         
 
         .header {
-            box-shadow: 0 4px 2px -4px gray;
+            box-shadow: 0 4px 2px -4px #0a8acc;
             .container-fluid {
 
                 span {
                     margin-top: 10px;
                     margin-left: 15px;
                     img {
-                        width: 250px;
+                        width: 210px;
                     }
                 }
             }
@@ -21,11 +21,91 @@
 
 
         .container-body {
-            width: 60%;
-            margin: 50px auto;    
+            width: 50%;
+            margin: 10px auto;    
 
-            fa-icon {
+            .button-back {
+                text-align: left;
+                fa-icon {
+                    color: #0a8acc;
+                }
+            }
+
+            h3,p {
+                color: #051549;
+            }
+
+            p {
+                span {
+                    color: #0a8acc;
+                    font-weight: bolder;
+                }
+            }
+
+            h5 {
+                color: #aaaaaafc;
+                font-weight: normal;
+            }
+
+            .info {
+                text-align: left;
                 color: #0a8acc;
+                margin-top: 30px;
+                font-weight: bold;
+            }
+
+            ul {
+                justify-content: space-between;
+                box-shadow: 0 5px 2px -4px #aaaaaafc;
+                li {
+                    
+                    a {
+                        color: #aaaaaafc;
+                    }
+
+                    .active {
+                        color: #051549;
+                        box-shadow: 0 5px 2px -2px #0a8acc;
+                    }
+                }
+            }
+
+            .lineas {
+                display: flex;
+                justify-content: center;
+
+                .card {
+                    width: 13rem !important;
+                    .card-body {
+                        padding-left: 0;
+                        padding-bottom: 0;
+                        /*padding-right: 0;*/
+                        img {
+                            width: 100px;
+                            height: 100px;;
+                        }
+
+                        h6 {
+                            color: #051549;
+                        }
+
+                        a {
+                            width: 100%;
+                            height: 50px;
+                            color:  #0a8acc;
+                            border: none;
+                            background-color: lightgray;
+                               
+                        }
+
+                        .isDisabled {
+                            color: currentColor;
+                            cursor: not-allowed;
+                            opacity: 0.5;
+                            text-decoration: none;
+                        }
+                    }
+                }
             }
         }
 

@@ -8,16 +8,49 @@
     </div>
   </nav>
   <!--Container Cuerpo-->
-  <div class="container-body">
+  <div class="container-body text-center">
     <div class="button-back">
       <fa-icon [icon]="faArrowLeft"></fa-icon>
+    </div>
+    <h3>{{ cliente.nombre }}</h3>
+    <h5>NIT: {{ cliente.nit }}</h5>
+    <p><b>Capa:</b> {{ cliente.capa }}  <span>&#183;</span>   <b> Segmento:</b> {{ cliente.segmento }}</p>
+    <!--Tabs-->
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Operación</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Indicadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Información Cliente</a>
+      </li>
+    </ul>
+    <p class="info">Indique la linea de crédito que quiere reconsiderar</p>
+    <div class="lineas">
+      <!--cards centradas para lineas de crédito-->
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <img src="assets/img/cartera.PNG" class="img-fluid" alt="Cartera ordinaria"/>
+          <h6 class="card-title">Cartera ordinaria</h6>
+          <a href="#" class="btn btn-primary">Continuar</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body isDisabled">
+          <img src="assets/img/leasing.PNG" class="img-fluid" alt="Leasing"/>
+          <h6 class="card-title">Leasing</h6>
+          <a href="#" class="btn btn-primary isDisabled" disabled>Continuar</a>
+        </div>
+      </div>
     </div>
   </div>
   <!--Footer-->
   <nav class="navbar navbar-light bg-light footer">
     <div class="container-fluid">
       <span class="navbar-brand mb-0 h1">
-        <img src="assets/img/footer.jpg" class="img-fluid" alt="logo-banco"/>
+        <img src="assets/img/footer.jpg" class="img-fluid" alt="logo-aval"/>
       </span>
     </div>
   </nav>
