@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ClienteService } from './services/cliente.service';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -10,9 +12,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [ClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
