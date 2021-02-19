@@ -8,6 +8,26 @@
       <span class="navbar-brand mb-0 h1">
         <img src="assets/img/header.png" class="img-fluid" alt="logo-banco"/>
       </span>
+      <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="container-fluid">
+            <h6>{{ cliente.gerenteRelacion }}</h6>
+            <p>Gerente de Relación</p>
+          </div>
+          <img src="assets/img/avatar.png" class="avatar"/>
+          <fa-icon [icon]="faBars"></fa-icon>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">
+            <div class="container-fluid">
+              <h6>{{ cliente.gerenteRelacion }}</h6>
+              <p>Gerente de Relación</p>
+            </div>
+            <img src="assets/img/avatar.png" class="avatar"/>
+          </a></li>
+          <li><a class="dropdown-item" href="#">Salir</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
   <!--Container Cuerpo-->

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faArrowLeft, faInfo } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faInfo, faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'prueba-bocc';
   faArrowLeft = faArrowLeft
   faInfo = faInfo;
+  faBars = faBars;
   cliente = {
     nit: "800220154",
     nombre: "Flotas la Macarena",
