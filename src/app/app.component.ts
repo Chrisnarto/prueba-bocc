@@ -17,7 +17,7 @@ export class AppComponent {
   /**
    * Se decalar objeto que lamacenera respuesta del servicio
    */
-  public cliente : Object = {};
+  public cliente : any = {};
 
   constructor(private clienteService: ClienteService) {  }
 
